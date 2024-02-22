@@ -25,7 +25,7 @@ jobs:
       run: npm install
 
     - name: Build
-      run: ng build --project=maberton-playground --prod --base-href /maberton/maberton-playground/ --output-path=dist/browser/
+      run: ng build --configuration=production --base-href=/maberton/maberton-playground/
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
